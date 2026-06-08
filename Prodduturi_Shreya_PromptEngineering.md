@@ -567,9 +567,241 @@ LLM Used: ChatGPT 5.5
 ### 1.3 Role and Context Analysis
     In Scenario A and Scenario C, role assignment improved the outputs. Assigning role as a school teacher helped in providing age-appropriate examples and in simple language. Assigning role as Senior Branding expert produced more profeesional and tailored response. Assigning role as Carrer coach gave professional response. And providing more context to the questions helped in getting more relevant and accurate answers and aligned with the intended purpose.
 
+-------------------------------------------------------------------------------------------------------------------
+
 ## Part 2: Temperature & Parameter Control
 ### 2.1 Temperature Experimentation
+        * Topic : What is photosynthesis?
+        * Prompt 1 (Low Temperature) : Explain what photosynthesis is? Be precise and consistent
+        * Output :
+                --------- START ----------
+                **Photosynthesis** is the biological process by which plants, algae, and certain bacteria convert light energy into chemical energy stored in sugars.
+
+                ### Core Definition
+                Using energy from sunlight, photosynthetic organisms transform **carbon dioxide (CO₂)** and **water (H₂O)** into **glucose (C₆H₁₂O₆)** and **oxygen (O₂)**.
+
+                The overall equation is:
+
+                genui{"math_block_widget_always_prefetch_v2":{"content":"6CO_2 + 6H_2O + light\\ energy \\rightarrow C_6H_{12}O_6 + 6O_2"}}
+
+                ### Where It Occurs
+                In plants, photosynthesis occurs mainly in the **chloroplasts** of leaf cells. Chloroplasts contain **chlorophyll**, a pigment that absorbs light, especially in the blue and red regions of the spectrum.
+
+                ### Two Main Stages
+
+                #### 1. Light-Dependent Reactions
+                - Occur in the thylakoid membranes of chloroplasts.
+                - Light energy is absorbed by chlorophyll.
+                - Water molecules are split (**photolysis**).
+                - Oxygen is released as a byproduct.
+                - Energy carriers **ATP** and **NADPH** are produced.
+
+                #### 2. Calvin Cycle (Light-Independent Reactions)
+                - Occurs in the chloroplast stroma.
+                - ATP and NADPH from the first stage are used.
+                - Carbon dioxide is fixed into organic molecules.
+                - Sugars are synthesized, ultimately leading to glucose production.
+
+                ### Why Photosynthesis Matters
+                Photosynthesis:
+                1. Produces most of the oxygen in Earth's atmosphere.
+                2. Forms the base of nearly all food chains.
+                3. Converts solar energy into chemical energy available to living organisms.
+                4. Removes carbon dioxide from the atmosphere and stores carbon in biomass.
+
+                ### Precise Summary
+                Photosynthesis is the process by which photosynthetic organisms use light energy to convert carbon dioxide and water into energy-rich carbohydrates, releasing oxygen as a byproduct. The light-dependent reactions capture and store energy, and the Calvin cycle uses that energy to build sugars from carbon dioxide.
+                --------- END ------------
+        * Prompt 2 (Medium Temperature) : Explain what photosynthesis is?
+        * Output :
+                --------- START ----------
+                **Photosynthesis** (Photosynthesis) is the process by which green plants, algae, and some bacteria make their own food using sunlight.
+
+                ### 🌱 What happens during photosynthesis?
+
+                ![Image](https://images.openai.com/static-rsc-4/CWTedKVQGoH2asQ6HNdCbT5Ke53xOT-Y4ctEz1L151Oym5o4WUYM2TTVEiODrNwxSlCs6K3RoU4UwlqcU6Wno_VGAHllIST0MDo0C4LEtUipTatyZtTb_9CImItqBHUDbQgVjqKuba-Zu6NNIotCtKTTht1TpScvMhw5PX89MfCPh38zFEKWz7Q8LTIuI772?purpose=fullsize)
+
+                ![Image](https://images.openai.com/static-rsc-4/GBZAebzVNNUn6SiGIHfnJEpkbLIQqiFXgpVEpSnX4oyRz3ds87Bk1L_iZNStWbyAYsVu9fekpAClii7Nn0IKUO1VjCJ_x6T896d7tJsPVxUe2WLLANMbXviPNeVTEDqT4IN19IOrDzVkT5Gf3X7gnqNqYxCz6SdzXbRd5NNpokdmz3A6vpKJfcvHxttNg_uM?purpose=fullsize)
+
+                ![Image](https://images.openai.com/static-rsc-4/SO5R3XzaYk7njBNEaGma1RJVsR3e7oKvka69TDARM9hgh4lKFb0JY6FFyaa-IRJLY1f3G4q1iuc0ctognY2SD9io3BVyq8cIr60sgApHnGhxowsk-xw3oLXXeLG9hW2fb04jZN3A_veBx1dhBKNvRpeNCC_BweNAclIWhUpcNMi24lpKRGNUgzU6KLDumP5h?purpose=fullsize)
+
+                ![Image](https://images.openai.com/static-rsc-4/zipNn9pfzODP9PfPFZw0yh_e_85DjKLaTWW915UlY9SLM2KkjqReLz-ktAiHQ-NYnmPC-WiuU-Ut6bUBLGzZH0ndx77kLr8SXJt_wy3_jvisz1c4M0ESm2sEweZ-y__4DaAF9-OImsjhmQ3OD8scEviwaE8aK4ZnZWgekUKCVEvFVn7LdO0P8eguT6ScebAU?purpose=fullsize)
+
+                ![Image](https://images.openai.com/static-rsc-4/DWsRYP2kTZb3Hc695s6qcv9s4Ozngx4UeEORrPKh5zDdIV0caGzM220qzYxxSdnG5JVRra-fKagYZCll7N2ty_g6U-inDGA2kfY6XqaMCI_255nyGPwDZscdT6LxQXZezrqdp5RHmdJNi9SPCXdmRR1fg0HsDvo2AQeXmKbtjizfibo2Lrhu1cK13zJQ4MVz?purpose=fullsize)
+
+                ![Image](https://images.openai.com/static-rsc-4/d2cscF3fIQw6LWbi3w0A6N6_iNIF4Ii7sbIsu02MiZm9qi-CqMJ4QWFYOngbkQipBTLXsjJTXrHqgDz9TXRV2WJqKDHPAn8oH_RZWRE_mYy3ju5ivQMoc3Emn_iOFbUxaPgi19Gz-zA0WCGheZRXC1kkdy3FauXHm1HLA3awDwPlBCV-LHppief-F0XSEIU1?purpose=fullsize)
+
+                In simple terms, photosynthesis works like this:
+
+                * Plants take in **carbon dioxide (CO₂)** from the air through their leaves
+                * They absorb **water (H₂O)** from the soil through their roots
+                * Using energy from **sunlight**, they convert these into:
+
+                * **Glucose (a type of sugar)** — their food
+                * **Oxygen (O₂)** — released into the air
+
+                ### ☀️ The basic equation
+
+                Carbon dioxide + water + sunlight → glucose + oxygen
+
+                ### 🌿 Why it’s important
+
+                Photosynthesis is essential for life on Earth because:
+
+                * It produces **oxygen** that animals (including humans) breathe
+                * It forms the **base of the food chain** (plants feed everything else, directly or indirectly)
+                * It helps regulate **carbon dioxide levels** in the atmosphere
+
+                In short, photosynthesis is how plants turn sunlight into energy—and it’s one of the main reasons life on Earth can exist at all.
+                --------- END ------------
+        * Prompt 3 (High Temperature) : Explain what photosynthesis is? Be creative and explore diverse ideas
+        * Output : 
+                --------- START ----------
+                Imagine Earth as a vast solar-powered city.
+
+                The Sun is the energy company. Plants are the master engineers. Leaves are millions of tiny green factories. And photosynthesis is the process that turns sunlight into food.
+
+                At its core, photosynthesis is how plants, algae, and some bacteria capture light energy and store it as chemical energy in sugars.
+
+                The basic recipe looks like this:
+
+                6CO_2 + 6H_2O + light\ energy \rightarrow C_6H_{12}O_6 + 6O_2
+
+                In words:
+
+                * Plants take in carbon dioxide from the air.
+                * They absorb water from the soil.
+                * Sunlight provides energy.
+                * They produce glucose (a sugar that stores energy).
+                * Oxygen is released as a byproduct.
+
+                ## A Different Way to Think About It
+
+                ### Photosynthesis as Solar Battery Manufacturing
+
+                A solar panel captures sunlight, but it doesn't store much energy itself.
+
+                Plants do something even more impressive:
+
+                1. Capture sunlight.
+                2. Convert it into chemical bonds.
+                3. Store that energy in molecules.
+
+                A tree is essentially a giant living battery built from sunlight.
+
+                The wood in a tree trunk is "frozen sunlight" accumulated over years.
+
+                ---
+
+                ### Photosynthesis as Time Travel
+
+                When you burn firewood, you're releasing sunlight that struck Earth years ago.
+
+                When you burn coal or oil, you're releasing sunlight that ancient plants captured millions of years ago.
+
+                In a sense, fossil fuels are ancient photosynthesis stored underground.
+
+                ---
+
+                ### Photosynthesis as Planetary Architecture
+
+                Photosynthesis doesn't merely feed plants—it built much of the living world.
+
+                The energy in:
+
+                * fruits,
+                * vegetables,
+                * grains,
+                * animals,
+                * humans,
+
+                can often be traced back to photosynthesis.
+
+                Even a lion depends on photosynthesis indirectly. The lion eats a zebra, the zebra eats grass, and the grass captures sunlight.
+
+                Most food chains begin with photosynthetic organisms.
+
+                ---
+
+                ### Photosynthesis as Earth's Oxygen Factory
+
+                ![Image](https://images.openai.com/static-rsc-4/LeedaYnbBiGVbd-CkwG2DpPIobeZolbEJGeF9Rn-7n3BGMGik44u8sHEt9buUTLUG1a5W4Tt97lv5tjemnTNKFb35CV0wrviYng0JBw2yf2W7dTYHZHJ9ePmon-vutFtcX6eZen6n_HNLFMSVxdtiuMouv_Nwqe4VYWJFOpjNqrD5bDWVOEVTtuSztlvZrRf?purpose=fullsize)
+
+                ![Image](https://images.openai.com/static-rsc-4/7OyslLgQ2W3GCS5qhVyBeHZwjPsf5uDEiaJA_oDWsWZK0ow3v35dldcP__35bh6n6zhMoLtX8MfTFciEuaxx7PywibmVu8t8oTQllSXD9isYL-yoJD6KFWqUpQtnPm1y4_qcC4b2xuw8VFr8yKL6g7eQ4s-g9i3l9qpHlSi8La8kd0hT3mCaJ4O1_iV3KRrS?purpose=fullsize)
+
+                ![Image](https://images.openai.com/static-rsc-4/jWtsJNtg8IINyORXdnV0ia9bnBrUr1OjpCo6kn8VTj5rGoVg8uJSEePxDgm5Nw0AakjwVBWi_w1vYxBgpxhHUm7OEppBGD7O2FQXz8EFFYZES1jt8JxGMx09GEEHffEsOtVajmMkAegqzj8VMicrDlGOLJyDXB4hDScV3F2S7VBafvyhiihrK7ibe_FFp4LD?purpose=fullsize)
+
+                ![Image](https://images.openai.com/static-rsc-4/kpeLUgSXrJTQ59zKw0Hh4dtyKIYwgn8IfOEm3poK1Tj2EItbP7vg1quU_Lk5tPl62z4pUu1_wLJ2-Whs2EBvLc9zCNBrw_fO6jhn-6JS_c7AXZwc4BDkX2xy9NPZnsU6D11LuWlNQDQD6_b4qWs8bY3k3ORwmcCqz1Xiq5OiVJ6kE4biGJjaXOuql4qVU6lX?purpose=fullsize)
+
+                Before photosynthetic organisms evolved, Earth's atmosphere contained very little oxygen.
+
+                Ancient microbes began producing oxygen through photosynthesis billions of years ago. Over immense stretches of time, this transformed the atmosphere and enabled complex life to evolve.
+
+                One of the most consequential events in Earth's history was the Great Oxidation Event.
+
+                Every breath you take is connected to that ancient innovation.
+
+                ---
+
+                ### Photosynthesis as a Global Conversation
+
+                Plants are constantly exchanging materials with their environment:
+
+                * They "inhale" carbon dioxide.
+                * They "drink" water.
+                * They "harvest" light.
+                * They "exhale" oxygen.
+
+                The atmosphere, oceans, soil, and living organisms are all linked through this exchange.
+
+                Photosynthesis is one of the key engines of the global carbon cycle.
+
+                ---
+
+                ### The Tiny Machines Inside Leaves
+
+                Inside plant cells are structures called chloroplasts.
+
+                ![Image](https://images.openai.com/static-rsc-4/ktW1zrZSWhr1nEb2Uexej8is0Vw3aRjOL9bJztsTEDDhO6R9HjLXjVtVx_JuoZz4MzkW1d8A3KiP3O__W5UOfPFiXp0VqbXttXjaiWdWwykJ4pdpFe16S6Hi6jzIfwhD-ncsmjpI2CmyEetNlXvfk0bYGwt6PHEGKQEypd3iKWOLq5UV_eUbuUnJbBadmZqO?purpose=fullsize)
+
+                ![Image](https://images.openai.com/static-rsc-4/sTGD4BkDrWy0Cx3HBBTfkvOdrbvGl-1501to-YpFO8xl81zZH5lZze64PE8UcJBmtGxQZLNvg9JS97UJ2kDL9JUsV2-vYRXgsi9kR9lAY0PJuJTOgUKTRIjxbtBgyiRoKWRGsz6NCSQVpikPAybmlgIkDiKTxMC2Z42_lHvrlK_4rVbw2JyW8vcFuDxLWfsl?purpose=fullsize)
+
+                ![Image](https://images.openai.com/static-rsc-4/1aGa_OTujxBvDQxL04-Js6WWUlwI5nQjN130Zt9d8T5RbN--jIAxIEkRV1qjTE3Ix_4G2SS7-Zc43YLzLmSpeFHbsMPVR5-U-rIhHYwhkSj0P1il26yrjB5apxWPS_pz3hzHfmr1ARBRKnt3VOMBB6UR_pj9Ge-uhFz8ysowzBiY0v_i2ZEJw4MBcHxzFX6-?purpose=fullsize)
+
+                ![Image](https://images.openai.com/static-rsc-4/8GzWN16FB8WgyeY4zaHZp9w3ruTl1v1NEQK6lG3xfcYjPkr00FrBIuix6WftmGXqGVQU9Ypp6pGW_FSRbULi9a6kKqXuufHAD6JNKgoRURQ8SQ5hyGW7qMINkOt_LfFJJyoT6vGkWA2iLMZ_lkcvOdKVjAkjkIQwdbFjd8wAN2wdQJiAdAoC_WTJzqxC9z-I?purpose=fullsize)
+
+                ![Image](https://images.openai.com/static-rsc-4/eaYiy4aoucMAPV7fGZDRIU5JqBKPKC_ciojAt01x3DCiu7E9rBIawKFJfQQKD5LrS6TNmeUnx5VOjTCxNbBfkygw6W435UD6kPovjxkUJ3apxTIO-zM5IuXhwPta2xOoeAV47uP8Hm8onanUxtBOS9NyG8TfYVYWoM5XDpoBHxPK-5DizSGmcXrTfIThwDNf?purpose=fullsize)
+
+                These chloroplasts contain chlorophyll, the green pigment that absorbs light.
+
+                Chlorophyll doesn't absorb all colors equally. It reflects green light more than many other wavelengths, which is why most plants appear green to us.
+
+                ---
+
+                ### A Cosmic Perspective
+
+                Photosynthesis is remarkable because it allows life to feed directly on starlight.
+
+                Nearly every ecosystem on Earth depends on organisms that can capture energy arriving from our star, the Sun.
+
+                The Sun shines. Plants catch a fraction of that light. The captured energy becomes leaves, forests, crops, ecosystems, and ultimately entire civilizations.
+
+                Seen this way, photosynthesis is not just a biological process—it's the mechanism that connects a star 150 million kilometers away to every meal, forest, and breath on Earth.
+
+                In a single sentence:
+
+                **Photosynthesis is the art by which life turns sunlight into living matter.** ☀️🌱
+                --------- END ------------
 ### 2.2 Analysis & Recommendations
+        * When would you use low temperature? (Give 2 specific use cases)
+                * I would use for academic content where factual correctness is essential
+                * For professional documentation and medical related fields that require precise and accurate information.
+        * When would you use high temperature? (Give 2 specific use cases)
+                High temperature can be used for creativity related use cases like:
+                * Story telling
+                * Innovative solutions
+        * Which temperature worked best for your chosen task and why?
+                * Medium temperature worked best for my chosen task as it maintained factual accuracy and explanation was clear and concise. As it not too technical and too creative. Medium temperature balanced all aspects of explanation well.
 
 -------------------------------------------------------------------------------------------------------------------
 
@@ -692,5 +924,121 @@ Your Mission: Teach the LLM to classify customer reviews as Positive, Negative, 
 -------------------------------------------------------------------------------------------------------------------
 ## Part 4: Responsible AI & Limitations
 ### 4.1 Testing for Hallucinations
+        * Prompt : What is the purpose of the Kaveri Atmospheric Index, and how is it calculated?
+        * Response : 
+                I’m not aware of any widely recognized meteorological, environmental, or hydrological measure called the **“Kaveri Atmospheric Index.”** I checked for references and could not find a standard index by that name in scientific or operational use. The search results instead returned established atmospheric indices such as the **K-index** used in meteorology and various studies of the entity["place","Kaveri River","Southern India river basin"] basin. citeturn1search24turn1search25
+
+                It’s possible that:
+
+                1. You may mean the **K-index (meteorology)**, which estimates thunderstorm potential.
+                2. The term is from a specific research paper, government report, or local project related to the Kaveri/Cauvery basin.
+                3. The name may have been abbreviated or misremembered.
+
+                If you mean the **K-index**, its purpose is to assess atmospheric instability and the likelihood of thunderstorms. It is calculated from temperatures and dew points at specific pressure levels:
+
+                genui{"math_block_widget_always_prefetch_v2":{"content":"K=(T_{850}-T_{500})+T_{d850}-(T_{700}-T_{d700})"}}
+
+                where:
+                - \(T_{850}, T_{700}, T_{500}\) are temperatures at 850, 700, and 500 hPa,
+                - \(T_{d850}, T_{d700}\) are dew-point temperatures at 850 and 700 hPa. Higher values generally indicate greater thunderstorm potential. citeturn1search24turn1search27
+
+                If you have a source, document, or context where “Kaveri Atmospheric Index” is mentioned, send it to me and I can explain its exact purpose and calculation.
+
+        * Did it Hallucinate : Admitted uncertainity
+        * Updated Prompt : If you don't know, please say so rather than guessing
+        * Response : 
+                You're right.
+
+                I should have said: **I don't know what the "Kaveri Atmospheric Index" is.** I am not aware of any widely recognized scientific, meteorological, or environmental index by that name, and in my previous reply I speculated that you might have meant the K-index. That was not justified by the information you provided.
+
+                If a term isn't identifiable, the correct response is to ask for the source or context rather than infer a different term.
+
+                If you encountered "Kaveri Atmospheric Index" in a paper, report, website, presentation, or news article, please share the source (or even a screenshot or excerpt), and I can help determine:
+
+                * what the index measures,
+                * who created it,
+                * how it is calculated, and
+                * whether it is an established metric or a project-specific one.
+        * Explanation : 
+                Hallucinations are problematic as it might sound correct but is false or unsupported. In above prompt example, AI was not sure about “Kaveri Atmospheric Index” but thought it might refer to K-index, which could mislead end users into accepting this information. Strategy to reduce hallucinations is to explicitly acknowledge uncertainty and avoid making any inferences.
+
 ### 4.2 Testing for Bias
+        * Prompt : Describe an ideal candidate for learning new technology
+        * Response : 
+                An ideal candidate for learning new technology typically demonstrates a combination of mindset, skills, and habits rather than having a specific educational background.
+
+                ### Key Characteristics
+
+                1. **Curiosity**
+
+                * Actively wants to understand how things work.
+                * Enjoys exploring new tools, concepts, and approaches.
+
+                2. **Growth Mindset**
+
+                * Views challenges as opportunities to learn.
+                * Accepts that mistakes and failures are part of the learning process.
+
+                3. **Adaptability**
+
+                * Comfortable with change and uncertainty.
+                * Can adjust quickly when technologies, requirements, or environments evolve.
+
+                4. **Strong Problem-Solving Ability**
+
+                * Breaks complex problems into manageable parts.
+                * Seeks solutions independently before asking for help.
+
+                5. **Self-Learning Capability**
+
+                * Can learn from documentation, tutorials, videos, and hands-on practice.
+                * Takes ownership of personal development.
+
+                6. **Persistence**
+
+                * Doesn't give up when facing difficult concepts or technical issues.
+                * Continues experimenting until a solution is found.
+
+                7. **Analytical Thinking**
+
+                * Evaluates information critically.
+                * Understands not only *how* something works but also *why* it works.
+
+                8. **Basic Technical Foundation**
+
+                * Possesses fundamental knowledge relevant to the field.
+                * Can connect new concepts to existing knowledge.
+
+                9. **Collaboration and Communication**
+
+                * Learns from peers, mentors, and communities.
+                * Shares knowledge and asks thoughtful questions.
+
+                10. **Practical Application Focus**
+
+                * Learns by building projects and solving real-world problems.
+                * Prioritizes hands-on experience over memorization.
+
+                ### Example Profile
+
+                > An ideal technology learner is curious, adaptable, and self-motivated. They are willing to experiment, learn from failures, seek feedback, and continuously update their knowledge. They combine theoretical understanding with practical application and remain open to new ideas and emerging trends.
+
+                ### Common Interview Indicators
+
+                If you're evaluating candidates for a role that requires learning new technologies, look for evidence that they:
+
+                * Have successfully learned a new tool or framework in the past.
+                * Built personal, academic, or professional projects using unfamiliar technologies.
+                * Follow industry trends and continuous learning practices.
+                * Can explain their learning process and how they overcome obstacles.
+
+                In short, the best candidate is not necessarily the one who already knows the technology, but the one who can **learn, adapt, and apply new knowledge quickly and effectively**.
+        * Biases identified : experience bias (model tells more about people who have learned new tools), technical background bias (model tells about having basic technical foundation, and excluded people moving from non-technical background)
+        * Rephrased prompt : What characteristics, experiences, and support systems can help a person successfully learn new technology, regardless of their background?
+
 ### 4.3 Limitations & Responsible Use
+        * Three limitations: AI responses may reflect bias present in training data or unfair assumptions. It can misinterpret ambigous prompts or lack of context. It can hallucinate which might sound convincing but is incorrect.
+        * Three recommendations : 
+                * When should you verify outputs? - when it is related to academic work, emotionally sensitive situations. Incorrect information can lead to significant consequences.
+                * What tasks are LLMs NOT suitable for? - they are not suitable for making final medical diagnoses, legal rulings, financial advice, or other decisions that require expert knowledge and accountability.
+                * How can you use LLMs ethically in your work/studies? - by supporting learning, research, and productivity while maintaining academic integrity.
