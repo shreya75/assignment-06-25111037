@@ -1,5 +1,5 @@
 # Prompt Engineering Portfolio
-Name: PRODDUTURI SHREYA REDDY
+Name: PRODDUTURI SHREYA
 Date: 06-06-2026
 LLM Used: ChatGPT 5.5
 
@@ -571,10 +571,125 @@ LLM Used: ChatGPT 5.5
 ### 2.1 Temperature Experimentation
 ### 2.2 Analysis & Recommendations
 
+-------------------------------------------------------------------------------------------------------------------
+
 ## Part 3: Strategic Prompting Techniques
+
 ### 3.1 Chain-of-Thought Prompting
+
+### Without Chain-of-Thought: 
+        * PROMPT : If a train travels 120 km in 2 hours, then stops for 30 minutes,
+        then travels another 90 km in 1.5 hours, what is its average speed for
+        the entire journey?
+        * Show the LLM output : 52.5 km/h
+### With Chain-of-Thought: Write a prompt that instructs the LLM to think step-by-step
+        * Example instruction: Now think step by step and show me answer
+        * Show the LLM output with reasoning:
+                Distance traveled:
+
+                * First part: 120 km
+                * Second part: 90 km
+                * **Total distance = 120 + 90 = 210 km**
+
+                Time taken:
+
+                * First part: 2 hours
+                * Stop: 30 minutes = 0.5 hours
+                * Second part: 1.5 hours
+                * **Total time = 2 + 0.5 + 1.5 = 4 hours**
+
+                Average speed:
+
+                \text{Average Speed}=\frac{210}{4}
+
+                **Average speed = 52.5 km/h**.
+
+### Comparison: In 3-4 sentences, explain:
+        * How the outputs differed : Outputs differed in amount of explanation. Without chain of thought,  model gave direct answer. With chain of thought, model gave detailed explanation of how it is able to give the answer.
+        * Why chain-of-thought helps with complex reasoning : Helps in understanding by giving step by step detailing and improves transparency by showing how the conclusion was reached. 
+        * One limitation you observed : longer responses and sometimes too much explanation
+
 ### 3.2 Few-Shot Prompting
 
+Task: Create a sentiment classifier using few-shot prompting
+Your Mission: Teach the LLM to classify customer reviews as Positive, Negative, or Neutral
+
+### Step 1: Zero-Shot Attempt (5 points)
+        * Prompt : 
+                classify sentiment for below reviews
+                "The product arrived damaged and customer service was unhelpful."
+                "Works as expected, nothing special but does the job."
+                "Absolutely love this! Best purchase I've made all year!"
+                "The quality is okay but slightly overpriced for what you get."
+                "Terrible experience, would not recommend to anyone."
+        * Output :
+                Here is a simple sentiment classification for each review:
+
+                | Review                                                            | Sentiment                               |
+                | ----------------------------------------------------------------- | --------------------------------------- |
+                | "The product arrived damaged and customer service was unhelpful." | **Negative**                            |
+                | "Works as expected, nothing special but does the job."            | **Neutral**                             |
+                | "Absolutely love this! Best purchase I've made all year!"         | **Positive**                            |
+                | "The quality is okay but slightly overpriced for what you get."   | **Neutral** (slightly negative leaning) |
+                | "Terrible experience, would not recommend to anyone."             | **Negative**                            |
+
+                As a labeled dataset:
+
+                ```text
+                1. Negative
+                2. Neutral
+                3. Positive
+                4. Neutral
+                5. Negative
+                ```
+
+### Step 2: Few-Shot Attempt (10 points)
+        * Prompt :
+                classify sentiment for below reviews
+                "The product arrived damaged and customer service was unhelpful."
+                "Works as expected, nothing special but does the job."
+                "Absolutely love this! Best purchase I've made all year!"
+                "The quality is okay but slightly overpriced for what you get."
+                "Terrible experience, would not recommend to anyone."
+                below are the example classification:
+                Review: "This product exceeded my expectations!"
+                Sentiment: Positive
+
+                Review: "Completely broke after one week of use."
+                Sentiment: Negative
+
+                Review: "It's fine, does what it says on the box."
+                Sentiment: Neutral
+        * Output :
+                Review: "The product arrived damaged and customer service was unhelpful."
+                Sentiment: **Negative**
+
+                Review: "Works as expected, nothing special but does the job."
+                Sentiment: **Neutral**
+
+                Review: "Absolutely love this! Best purchase I've made all year!"
+                Sentiment: **Positive**
+
+                Review: "The quality is okay but slightly overpriced for what you get."
+                Sentiment: **Neutral**
+
+                Review: "Terrible experience, would not recommend to anyone."
+                Sentiment: **Negative**
+
+
+### Step 3: Analysis
+        * Comparison Table : 
+                | Review # | Zero-Shot Result | Few-Shot Result | Correct Label | Improved? |
+                | -------- | ---------------- | --------------- | ------------- | --------- |
+                | 1        | Negative         | Negative        | Negative      | No        |
+                | 2        | Neutral          | Neutral         | Neutral       | No        |
+                | 3        | Positive         | Positive        | Positive      | No        |
+                | 4        | Neutral          | Neutral         | Neutral       | No        |
+                | 5        | Negative         | Negative        | Negative      | No        |
+
+        * Analysis : 
+                Few-shot prompt did not improve the classification results because zero-shot already correctly identified the sentiment of all five reviews. However, few-shot prompting is most useful when tasks are ambiguous and complex.Few-shot prompting helps the model better understand the expected output format and decision criteria, often improving accuracy and consistency on more challenging datasets.
+-------------------------------------------------------------------------------------------------------------------
 ## Part 4: Responsible AI & Limitations
 ### 4.1 Testing for Hallucinations
 ### 4.2 Testing for Bias
